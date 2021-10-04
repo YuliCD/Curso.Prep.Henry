@@ -139,9 +139,15 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero > 99 && numero < 1000) {return true}
-  else {return false}
+  var frase = numero.toString()
+  var array = frase.split("")
+  if(array.length === 3) {
+  return true
+  }else return false
 }
+//   if(numero > 99 && numero < 1000) {return true}
+//   else {return false}
+// }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
